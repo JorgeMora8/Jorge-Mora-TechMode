@@ -1,0 +1,892 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.logo-navbar { 
+    font-family: "Poppins";
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.navItem { 
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.imgLogo { 
+    width: 60px;
+    height: auto;
+    margin: 0px 20px;
+    display: inline-block;
+}
+
+.saludoUsuario { 
+    font-family: "Poppins", sans-serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+    color: #424244;
+    margin: 20px 0px;
+}
+
+.infoContainer { 
+    width: 100%;
+    height: auto;
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+
+}
+
+.infoContainer div { 
+    width: 36rem;
+    height: auto;
+    margin: 10px;
+}
+
+.infoContainerTitulo { 
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.infoContainerParrafo { 
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.imgLanding { 
+    width: 100%;
+}
+
+.opcionesContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 50px 0px;
+}
+
+.opcion { 
+    width: 20rem;
+    height: 26rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 2px rgba(112, 90, 255, 0.2);
+    border-radius: 1rem;
+    margin: 5px;
+    margin: 10px 20px;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+.opcion:hover { 
+    transform: translateX(-1%);
+}
+
+.contadorContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee;
+    border-radius: 1rem;
+    padding: 2px;
+}
+
+.btnItem { 
+    width: 2rem;
+    height: 2.3rem;
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    transition: 0.5s ease;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 0.4rem;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+}
+
+.btnItem:hover { 
+    background-color: rgb(87, 20, 230);
+    border: none;
+}
+
+.contadorResultado { 
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+
+.imgOpciones { 
+    width: 100%;
+}
+
+.nombreProducto {
+    font-weight: 600;
+    color: #3f5aa3;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    margin: 10px 20px;
+}
+
+.precioProducto { 
+    color: #424242;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 700;
+    margin: 5px 20px;
+}
+
+.unidadesStock { 
+    margin: 0px 20px;
+}
+
+.especificacionProducto { 
+    margin: 0px 20px;
+}
+
+.btnItemCarrito { 
+    color: #fff;
+    background-color: rgb(85, 29, 162);
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 1rem;
+}
+
+.btnItemCarrito:hover { 
+    background-color: rgb(119, 43, 226);
+}
+
+
+.btnVerProductos { 
+    color: #fff;
+    background-color: rgb(255, 103, 80);
+    border: none;
+    padding: 6px;
+    border-radius: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.btnVerProductos:hover { 
+    background-color: rgb(255, 84, 58);
+}
+
+.LoadingMensaje { 
+    text-align: center;
+    color: #424242;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.verProductoBtn { 
+    color: #fff;
+    background-color: rgb(47, 53, 78);
+    border:1px solid rgb(119, 43, 226);
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border-radius: 0.3rem;
+    transition: 0.5s ease;
+}
+
+.verProductoBtn:hover { 
+    color: rgb(157, 0, 255);
+    background-color: #ffff;
+}
+
+.productoDetailContainer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    background-color: #e0ecf8;
+}
+
+.productoDetail { 
+    width: 70%;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.productoImagen { 
+    width: 30rem;
+    height: 30rem;
+}
+
+.productoInfo { 
+    width: 30rem;
+    height: auto;
+}
+
+.productoInfoTitulo { 
+    font-family: "Poppins", sans-serif;
+    color: #1e1e1e;
+    margin: 0%;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #424242;
+}
+
+.listaCaracteristica{ 
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0px;
+}
+
+.listaCaracteristica li { 
+    font-size: 1.2rem;
+}
+
+
+.productoDetalle { 
+    text-align: left;
+    color: #8d8d8d;
+}
+
+
+.productoInfoEnvio { 
+    margin: 10px 0px;
+}
+
+.btnComprarProducto { 
+    width: 100%;
+    background-color: #7904ef;
+    color: #fff;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    padding: 7px ;
+    font-size: 1.2rem;
+    border-radius: 0.7rem;
+    transition: 0.5s ease;
+    margin: 10px 0px;
+}
+
+.precioProducto {
+    color: #a506e4;
+    font-size: 2.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.btnComprarProducto:hover { 
+    background-color: #9b36ff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.55);
+    margin: 0;
+}
+.navbar-dark .navbar-brand {
+    color: #fff;
+    margin: 0;
+}
+
+.boldType {
+    font-weight: 600;
+}
+
+.footerContainer {
+    width: 100%;
+    height: auto;
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerContainer div { 
+    width: 20rem;
+    height: 10rem;
+    margin: 10px;
+}
+
+.nombreEcommerceFooter { 
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.infoFooter { 
+    color:#fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.iconoEnvio { 
+    color: #8a23ff;
+    font-size: 1.7rem;
+    margin: 5px;
+}
+
+
+.agregarCarritoBtn{ 
+    color: #fff;
+    background-color: #8a23ff;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 10px;
+    transition: 0.25s ease;
+}
+
+
+.agregarCarritoBtn:hover { 
+    color: #7904ef;
+    background-color: #ffff;
+}
+
+.infoCartContainer { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+.infoCartContainer div{ 
+    width: 35rem;
+    height: auto;
+}
+
+.cartTitulo { 
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.linkCategorias { 
+    color: green;
+}
+
+.wrapperInfoContainer { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapperInfo { 
+    width: 30rem;
+    height: auto;
+}
+
+
+
+.cartItem{ 
+  width: 20rem;
+  height: 20rem;
+  background-color: #1e1e1e;
+}
+
+.CarritoInfoContainer {
+    width: 100%;
+    height: auto;
+    background-color: #fff,;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    flex-direction: column;
+}
+
+.carritoItemInfo { 
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.infoItem { 
+    width: 20rem;
+    height: 10rem;
+}
+
+.nombreProductoItem { 
+    color: #424242;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.listaCaract { 
+    list-style-type: none;
+    padding: 0%;
+}
+
+.unidadesProductoPrecio { 
+    width: 15rem;
+    height: auto;
+}
+
+.precioProductoCarrito { 
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "poppins", sans-serif;
+    color: rgb(93, 33, 246);
+}
+
+.unidadesProductoCarrito { 
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+}
+
+.btnSeguiComprando { 
+    border: none;
+    border-radius: 0.6rem;
+    font-family: "poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: rgb(81, 50, 218);
+    color: #fff;
+    padding: 7px 10px;
+}
+
+.btnIrCarrito { 
+    border: none;
+    border-radius: 0.6rem;
+    font-family: "poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: rgb(255, 89, 80);
+    color: #fff;
+    padding: 7px 10px;
+}
+
+.btnVaciarCarrito { 
+    background-color: #ffd3d3;
+    border: none;
+    border-radius: 1rem;
+    font-family: "poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btnVaciarCarrito:hover { 
+    background-color:#ffb7b7 ;
+}
+
+.ImagenDetalle { 
+    width: 10rem;
+    height: 10rem;
+    margin: 0px 20px;
+}
+
+.imgCarritoItem { 
+    width: 100%;
+    height: auto;
+}
+
+.mensajeCargando { 
+    text-align: center;
+}
+
+.MensajeEsperaContainer { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #98b2cc;
+}
+
+
+
+.tituloEspera { 
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 700; 
+    font-family: "poppins", sans-serif;
+}
+
+.parrafoEspera { 
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400
+    ;
+}
+
+.cantidadItemCartWidget { 
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.inactivo{ 
+    display: none;
+}
+
+.mensajeNOarticulos { 
+    font-family: "poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #424242;
+}
+
+.btnFinalizarCompra { 
+    background-color: #caffe2;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.btnFinalizarCompra:hover { 
+    background-color: #9fffca;
+}
+
+.popUpModalPagar { 
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 30rem;
+    height: 37rem;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.backgroundPopUpModal { 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.inputFormularioPagar { 
+    width: 90%;
+    border-radius: 1rem;
+    padding: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin: 10px 0px;
+    margin-left: 23px ;
+    font-family: "poppins", sans-serif;
+}
+
+.techModeLogo { 
+    color: #1e1e1e;
+    font-family: "poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.formularioPagar { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btnPagoFinalizado { 
+    color: #fff;
+    background-color: rgb(255, 100, 92);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 1rem;
+    transition: 0.2s ease;
+}
+
+.btnPagoFinalizado:hover{ 
+    color: rgba(255, 100, 92);
+    background-color: #fff;
+    border: 0.5px solid salmon;
+}
+
+.selecTarjeta { 
+    background-color: #212529;
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 0.5rem;
+}
+
+.subTituloInfo{ 
+    font-size: 1.4rem;
+    color: #424242;
+    font-weight: 500; 
+    font-family: "poppins", sans-serif;
+
+}
+
+.parrafoInfo { 
+    font-size: 0.95rem;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+}
+
+.precioTotal { 
+    font-size: 1.3rem;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    background-color: #ebebeb;
+    border-radius: 1rem;
+    padding: 5px 10px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.formularioCompraContainer { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.formularioCompra{ 
+    width: 40rem;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 20%);
+    border-radius: 1rem;
+}
+
+.formularioInputArea{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input { 
+    width: 20rem;
+    margin: 7px 0px;
+    padding: 2px; 
+}
+
+.btnComprar { 
+    margin: 10px;
+}
+
+.tituloFormulario{ 
+    font-family: "poppins", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #424242;
+    padding: 20px;
+}
+
+.infoFormulario { 
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    padding: 0px 20px;
+}
+
+.selectTarjeta{ 
+    color: #fff;
+    background-color: #8a23ff;
+    padding: 5px;
+    border:none
+}
+
+.btnComprar{ 
+    background-color: rgb(235, 120, 107);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+}
+
+.registroItemContainer { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.registroItem { 
+    width: 20rem;
+    height: 9rem;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    margin: 10px;
+}
+
+.nombreRegistro { 
+    color: rgb(29, 29, 29);
+    font-size: 1.2rem; 
+    font-weight: 500;
+    margin: 3px 20px;
+    display: block;
+}
+
+.emailRegistro { 
+    color: #1e1e1e;
+    font-size: 1rem; 
+    font-weight: 500;
+    margin: 3px 20px;
+    display: block;
+}
+
+.emailFecha { 
+    color: #1e1e1e;
+    font-size: 0.7rem; 
+    font-weight: 500;
+    margin: 3px 20px;
+    float: right;
+}
+
+.registroInfoContainer { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.registroInfoContainer div { 
+    width: 30rem;
+    height: auto;
+    margin:10px;
+}
+
+.infoTituloRegistro { 
+    text-align: center;
+}
+
+.tituloInfoRegistro { 
+    color: #1e1e1e;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "poppins", sans-serif;
+}
+
+.parrafoInfoRegistro{ 
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #424242;
+}
+
+.opcionesTitulo { 
+    font-family: "poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.categoriaInfoContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.itemCategoria { 
+    width: 18rem;
+    background-color: #fff;
+    height: 10rem;
+    margin: 10px;
+    box-shadow: 1px 2px 2px rgba(255, 77, 0, 0.2);
+    border-radius: 1rem;
+    transition: 0.3s ease;
+}
+
+.itemCategoria:hover { 
+    transform: translateY(-1%);
+}
+
+
+
+.fa-2x{ 
+    margin: 0px 10px;
+    color: #ff912b;
+}
+
+.nombreItemCategoria{ 
+    display: block;
+    font-family: "poppins", sans-serif;
+    color: #1e1e1e;
+    margin: 0px 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.parrafoItemCategoria{ 
+    margin: 0px 10px;
+    font-size: 1rem;
+}
+
+.precioTotal { 
+    color: rgb(142, 0, 251);
+    font-weight: 600;
+    background-color: #fff;
+}
+
+.btnIrComprar{ 
+        border: none;
+        border-radius: 1rem;
+        font-family: "poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        width: 100%;
+        color: #1e1e1e;
+        background-color: #fff;
+        
+}
+
+.btnIrComprar:hover{ 
+    background-color: #98b2cc;
+}
